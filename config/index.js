@@ -3,7 +3,7 @@
 require('dotenv').config();
 
 const DEFAULT = {
-  DEBUG: false,
+  DEBUG: process.env.DEBUG === 'true' || false,
   HINT_TIMEOUT_MS: process.env.HINT_TIMEOUT_MS || 7 * 1000,
   QUESTION_TIMEOUT_MS: process.env.QUESTION_TIMEOUT_MS || 14 * 1000,
   BETWEEN_QUESTION_DELAY_MS: process.env.BETWEEN_QUESTION_DELAY_MS || 2 * 1000,
