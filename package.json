@@ -1,0 +1,32 @@
+{
+  "name": "jeopardy-bot",
+  "version": "0.0.1",
+  "description": "Jeopardy! Discord bot",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TODO/TODO.git"
+  },
+  "author": "Anthony Chen",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon | pino-pretty",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bluebird": "^3.7.2",
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "nodemon": "^2.0.6",
+    "pino": "^6.7.0",
+    "redis": "^3.0.2",
+    "string-similarity": "^4.0.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-lob": "^5.0.0",
+    "pino-pretty": "^4.3.0"
+  }
+}
