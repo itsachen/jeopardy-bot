@@ -32,6 +32,12 @@ describe('AnswerComparison', () => {
         expect(AnswerComparison.compare(guess, actual)).to.eq(true);
       });
 
+      it('ignores hyphens', () => {
+        const guess = 'trick or treat';
+        const actual = 'trick-or-treat';
+        expect(AnswerComparison.compare(guess, actual)).to.eq(true);
+      });
+
     });
 
   });
